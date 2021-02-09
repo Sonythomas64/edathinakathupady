@@ -1,0 +1,2 @@
+class Addtaxi < ApplicationRecord
+end

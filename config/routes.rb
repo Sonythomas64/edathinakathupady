@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :add_taxis
+  resources :addtaxis
   #get 'home/index'
   get 'home/about'
   root 'home#index'

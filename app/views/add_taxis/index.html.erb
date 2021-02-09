@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table table table-striped table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>Vehicle</th>
+      <th>Taxiholdername</th>
+      <th>Registrationnumber</th>
+      <th>Phonenumber</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @add_taxis.each do |add_taxi| %>
+      <tr>
+        <td><%= add_taxi.Vehicle %></td>
+        <td><%= add_taxi.TaxiHoldername %></td>
+        <td><%= add_taxi.Registrationnumber %></td>
+        <td><%= add_taxi.Phonenumber %></td>
+        <td><%= link_to 'Show', add_taxi %></td>
+        <td><%= link_to 'Edit', edit_add_taxi_path(add_taxi) %></td>
+        <td><%= button_to 'Destroy', add_taxi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Add Taxi', new_add_taxi_path, class:"btn btn-success" %>
+

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @add_taxi.Vehicle %></h1>
+  <p> <strong>Taxiholdername:</strong> <%= @add_taxi.TaxiHoldername %></p>
+  <p> <strong>Registrationnumber:</strong><%= @add_taxi.Registrationnumber %></p>
+   <p> <strong>Phonenumber:</strong><%= @add_taxi.Phonenumber %></p>
+  <%= link_to 'Edit', edit_add_taxi_path(@add_taxi), class:"btn btn-success" %> 
+  <%= link_to 'Back', add_taxis_path,  class:"btn btn-success"  %>
+</div>
+
+
+

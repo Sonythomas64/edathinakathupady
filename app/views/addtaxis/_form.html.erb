@@ -1,0 +1,52 @@
+<%= form_with(model: addtaxi) do |form| %>
+  <% if addtaxi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(addtaxi.errors.count, "error") %> prohibited this addtaxi from being saved:</h2>
+
+      <ul>
+        <% addtaxi.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Vehicle %>
+    <%= form.text_field :Vehicle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Taxi %>
+    <%= form.text_field :Taxi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Holdername %>
+    <%= form.text_field :Holdername %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Registration %>
+    <%= form.text_field :Registration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.text_field :number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Phone %>
+    <%= form.text_field :Phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.text_field :number %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

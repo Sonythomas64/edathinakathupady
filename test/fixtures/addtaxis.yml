@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Vehicle: MyString
+  Taxi: MyString
+  Holdername: MyString
+  Registration: MyString
+  number: MyString
+  Phone: MyString
+  number: MyString
+
+two:
+  Vehicle: MyString
+  Taxi: MyString
+  Holdername: MyString
+  Registration: MyString
+  number: MyString
+  Phone: MyString
+  number: MyString
