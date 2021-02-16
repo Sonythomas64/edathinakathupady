@@ -11,27 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field from-group">
     <%= form.label :Vehicle %>
-    <%= form.text_field :Vehicle %>
+    <%= form.text_field :Vehicle, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field  from-group">
     <%= form.label :TaxiHoldername %>
-    <%= form.text_field :TaxiHoldername %>
+    <%= form.text_field :TaxiHoldername, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field from-group">
     <%= form.label :Registrationnumber %>
-    <%= form.text_field :Registrationnumber %>
+    <%= form.text_field :Registrationnumber, class:"form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field  from-group">
     <%= form.label :Phonenumber %>
-    <%= form.text_field :Phonenumber %>
+    <%= form.text_field :Phonenumber, class:"form-control" %>
   </div>
 
+</br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-info" %>
   </div>
 <% end %>
